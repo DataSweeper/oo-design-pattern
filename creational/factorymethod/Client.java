@@ -5,6 +5,6 @@ public class Client {
         TransPort transPort = new RoadTransport();
         transPort.getStatus();
         TransPort seaTransport = new SeaTransport();
-        seaTransport.CreateStatus();
+        seaTransport.getStatus();
     }
 }

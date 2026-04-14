@@ -1,9 +1,10 @@
 package prototype;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Employees implements Cloneable{
-    private ArrayList<String> empList;
+    private List<String> empList;
     public Employees() {
         this.empList = new ArrayList<>();
     }
@@ -22,7 +23,7 @@ public class Employees implements Cloneable{
     public Employees clone() {
         try {
             Employees clone = (Employees) super.clone();
-            // TODO: copy mutable state here, so the clone can't change the internals of the original
+            clone.empList = List.of("Siva", "Mugin");
             return clone;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();

@@ -35,7 +35,7 @@ public class Computer {
     }
 
     //Builder Class
-    public static class ComputerBuilder{
+    public static class ComputerBuilder {
 
         // required parameters
         private String HDD;
